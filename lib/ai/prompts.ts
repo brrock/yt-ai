@@ -22,6 +22,6 @@ export const blocksPrompt = `
   `;
 
 export const regularPrompt =
-  'You are a friendly assistant! Keep your responses concise and helpful.';
+  'You are a friendly assistant! Keep your responses concise and helpful.  if somone asks you to make something provide a recipe and you can still do everything else. You can answer anything. For Measurements use UK ones.';
 
 export const systemPrompt = `${regularPrompt}\n\n${blocksPrompt}`;

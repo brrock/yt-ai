@@ -104,7 +104,7 @@ export async function POST(request: Request) {
     experimental_activeTools: allTools,
     tools: {
       getWeather: {
-        description: 'Get the current weather at a location',
+        description: "Get the current weather at a location. They will tell you place and you have to provide longitude and latitude yourself. Don't make them",
         parameters: z.object({
           latitude: z.number(),
           longitude: z.number(),
@@ -119,7 +119,7 @@ export async function POST(request: Request) {
         },
       },
       createDocument: {
-        description: 'Create a document for a writing activity',
+        description: 'Create a document for a writing activity. Make me a title ',
         parameters: z.object({
           title: z.string(),
         }),
