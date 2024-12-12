@@ -14,6 +14,12 @@ export const models: Array<Model> = [
     apiIdentifier: 'gemini-1.5-flash',
     description: 'Small model for fast, lightweight tasks',
   },
+  {
+    id: 'gemini-1.5-flash',
+    label: 'large',
+    apiIdentifier: 'gemini-1.5-pro',
+    description: 'Large model for slower, heavy tasks',
+  },
 ] as const;
 
-export const DEFAULT_MODEL_NAME: string = 'normal';
+export const DEFAULT_MODEL_NAME: string = 'gemini-1.5-flash';
